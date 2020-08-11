@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: aquamarine;
+    width: 450px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.container .controls {
+    display: flex;
+}
+.container .controls button {
+    flex-grow: 1;
+    margin: 0 5px 4px;
+    padding: 5px 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    outline: none;
+    color: white;
+}
+.container .controls button:active {
+    box-shadow: none;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+.container .controls .start {
+    background-color: #44f;
+}
+.container .controls .start:hover {
+    background-color: #77f;
+}
+.container .controls .stop {
+    background-color: #d44;
+}
+.container .controls .stop:hover {
+    background-color: #d77;
+}
+.container .controls .reset {
+    background-color: #4b4;
+}
+.container .controls .reset:hover {
+    background-color: #7b7;
+}
+.container .display {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 20px;
+}
+.container .display span:not(:last-child)::after {
+    content: ':';
+}
